@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Sample (Sharpee) &mdash; tests</title>
+<style>
+:root { --bg: #101418; --fg: #d8dee6; --muted: #7f8b99; --line: #232b35; --pass: #6fcf7f; --fail: #ff7a7a; --cmd: #8fd3ff; }
+* { box-sizing: border-box; }
+body { margin: 0; background: var(--bg); color: var(--fg); font: 15px/1.5 Georgia, "Times New Roman", serif; }
+.wrap { max-width: 860px; margin: 0 auto; padding: 24px 20px 60px; }
+header { border-bottom: 1px solid var(--line); padding-bottom: 12px; margin-bottom: 20px; color: var(--muted); font-family: ui-monospace, Consolas, monospace; font-size: 13px; }
+header strong { color: var(--fg); font-size: 18px; display: block; font-family: Georgia, serif; }
+.summary { display: flex; gap: 18px; flex-wrap: wrap; margin-top: 8px; }
+.status { font-weight: bold; }
+.status.PASS { color: var(--pass); } .status.FAIL { color: var(--fail); }
+h2 { font-size: 14px; font-family: ui-monospace, Consolas, monospace; color: var(--muted); letter-spacing: .06em; text-transform: uppercase; margin: 28px 0 10px; }
+.card { border-left: 3px solid var(--line); padding: 6px 0 6px 14px; margin: 0 0 14px; }
+.card.fail { border-left-color: var(--fail); }
+.cmd { font-family: ui-monospace, Consolas, monospace; color: var(--cmd); }
+pre.out { white-space: pre-wrap; margin: 6px 0; font: inherit; color: var(--fg); opacity: .92; }
+ul.asserts { list-style: none; margin: 4px 0 0; padding: 0; font-family: ui-monospace, Consolas, monospace; font-size: 13px; }
+ul.asserts li.pass { color: var(--pass); } ul.asserts li.fail { color: var(--fail); }
+</style>
+</head>
+<body>
+<div class="wrap">
+<header>
+  <strong>Sample (Sharpee) &mdash; test report</strong>
+  <div class="summary">
+    <span class="status PASS">PASS</span>
+    <span>64/64 cards</span>
+    <span>106/106 assertions</span>
+    <span>sample-sharpee.tests.json</span>
+    <span>Sharpee 5.3.0 · Chord 3.6.0</span>
+    <span>2026-09-08 01:31</span>
+  </div>
+</header>
+<section class="line"><h2>opening-entrance-hall</h2><article class="card pass"><div class="cmd">&#9989; &gt; opening</div><ul class="asserts"><li class="pass">&#10003; channel info.title is &quot;Sample (Sharpee)&quot;</li><li class="pass">&#10003; channel info.description is &quot;A practice game for learning Chord: rooms, objects, and interactions.&quot;</li></ul></article><article class="card pass"><div class="cmd">&#9989; &gt; look</div><pre class="out">Entrance Hall
+A grand hall with marble floors and high ceilings. A crystal chandelier hangs overhead. Exits lead north to a library, east to a kitchen, and south to a garden.
+
+You can see a brass key here.</pre><ul class="asserts"><li class="pass">&#10003; contains &quot;Entrance Hall&quot;</li><li class="pass">&#10003; contains &quot;A crystal chandelier hangs overhead.&quot;</li><li class="pass">&#10003; contains &quot;You can see a brass key here.&quot;</li></ul></article><article class="card pass"><div class="cmd">&#9989; &gt; take brass key</div><pre class="out">Taken.</pre><ul class="asserts"><li class="pass">&#10003; contains &quot;Taken.&quot;</li><li class="pass">&#10003; state player.inventory contains brass key</li></ul></article><article class="card pass"><div class="cmd">&#9989; &gt; n</div><pre class="out">Library
+Tall bookshelves line every wall, crammed with leather-bound volumes. A reading desk sits in the center of the room. A narrow staircase leads up.
+
+On the reading desk you see a dusty journal.</pre><ul class="asserts"><li class="pass">&#10003; contains &quot;Library&quot;</li><li class="pass">&#10003; contains &quot;On the reading desk you see a dusty journal.&quot;</li></ul></article><article class="card pass"><div class="cmd">&#9989; &gt; open journal</div><pre class="out">You open the dusty journal.
+
+You flip through the journal. Most entries are illegible, but one page reads: &quot;The treasure is hidden where water meets stone.&quot;</pre><ul class="asserts"><li class="pass">&#10003; contains &quot;You open the dusty journal.&quot;</li><li class="pass">&#10003; contains &quot;The treasure is hidden where water meets stone.&quot;</li><li class="pass">&#10003; state the dusty journal is consulted</li></ul></article><article class="card pass"><div class="cmd">&#9989; &gt; s</div><pre class="out">Entrance Hall
+A grand hall with marble floors and high ceilings. A crystal chandelier hangs overhead. Exits lead north to a library, east to a kitchen, and south to a garden.</pre><ul class="asserts"><li class="pass">&#10003; contains &quot;Entrance Hall&quot;</li></ul></article><article class="card pass"><div class="cmd">&#9989; &gt; s</div><pre class="out">Garden
+A walled garden overgrown with ivy and wildflowers. A stone fountain stands in the center, dry and cracked. A path continues south to a pond.
+
+You can see a rusty coin here.</pre><ul class="asserts"><li class="pass">&#10003; contains &quot;Garden&quot;</li><li class="pass">&#10003; contains &quot;You can see a rusty coin here.&quot;</li></ul></article><article class="card pass"><div class="cmd">&#9989; &gt; take rusty coin</div><pre class="out">Taken.
+
+You brush off the grime. Despite its age, the coin has a satisfying weight.</pre><ul class="asserts"><li class="pass">&#10003; contains &quot;You brush off the grime. Despite its age, the coin has a satisfying weight.&quot;</li><li class="pass">&#10003; state the rusty coin is polished</li></ul></article><article class="card pass"><div class="cmd">&#9989; &gt; s</div><pre class="out">Pond
+A small, murky pond surrounded by reeds and flat stones. The water is still and dark. The garden lies back to the north.</pre><ul class="asserts"><li class="pass">&#10003; contains &quot;Pond&quot;</li><li class="pass">&#10003; contains &quot;reeds and flat stones&quot;</li></ul></article><article class="card pass"><div class="cmd">&#9989; &gt; push flat stones</div><pre class="out">You push the flat stones.
+
+You push aside one of the loose stones and discover a golden ring hidden beneath it!
+
+You have risen to the rank of an Explorer.</pre><ul class="asserts"><li class="pass">&#10003; contains &quot;You push aside one of the loose stones and discover a golden ring hidden beneath it!&quot;</li><li class="pass">&#10003; state the golden ring is found</li><li class="pass">&#10003; state the flat stones is shifted</li></ul></article><article class="card pass"><div class="cmd">&#9989; &gt; take golden ring</div><pre class="out">Taken.</pre><ul class="asserts"><li class="pass">&#10003; contains &quot;Taken.&quot;</li><li class="pass">&#10003; state player.inventory contains golden ring</li></ul></article><article class="card pass"><div class="cmd">&#9989; &gt; n</div><pre class="out">Garden
+A walled garden overgrown with ivy and wildflowers. A stone fountain stands in the center, dry and cracked. A path continues south to a pond.</pre><ul class="asserts"><li class="pass">&#10003; contains &quot;Garden&quot;</li></ul></article><article class="card pass"><div class="cmd">&#9989; &gt; n</div><pre class="out">Entrance Hall
+A grand hall with marble floors and high ceilings. A crystal chandelier hangs overhead. Exits lead north to a library, east to a kitchen, and south to a garden.</pre><ul class="asserts"><li class="pass">&#10003; contains &quot;Entrance Hall&quot;</li></ul></article><article class="card pass"><div class="cmd">&#9989; &gt; n</div><pre class="out">Library
+Tall bookshelves line every wall, crammed with leather-bound volumes. A reading desk sits in the center of the room. A narrow staircase leads up.
+
+On the reading desk you see a dusty journal.</pre><ul class="asserts"><li class="pass">&#10003; contains &quot;Library&quot;</li></ul></article><article class="card pass"><div class="cmd">&#9989; &gt; up</div><pre class="out">Study
+A cozy room at the top of the narrow staircase. A wooden cabinet stands against one wall. The only exit is back down.</pre><ul class="asserts"><li class="pass">&#10003; contains &quot;Study&quot;</li><li class="pass">&#10003; state player.location = Study</li></ul></article><article class="card pass"><div class="cmd">&#9989; &gt; unlock cabinet with brass key</div><pre class="out">You unlock the wooden cabinet with the brass key.</pre><ul class="asserts"><li class="pass">&#10003; contains &quot;You unlock the wooden cabinet with the brass key.&quot;</li></ul></article><article class="card pass"><div class="cmd">&#9989; &gt; open cabinet</div><pre class="out">You open the wooden cabinet.
+
+In the wooden cabinet you see a silver locket.</pre><ul class="asserts"><li class="pass">&#10003; contains &quot;You open the wooden cabinet.&quot;</li><li class="pass">&#10003; contains &quot;In the wooden cabinet you see a silver locket.&quot;</li></ul></article><article class="card pass"><div class="cmd">&#9989; &gt; take silver locket</div><pre class="out">You take the silver locket from the wooden cabinet.
+
+As you pick up the locket, it glows faintly. You feel a sense of accomplishment.
+
+Congratulations! You have found all the secrets of this place. You win!
+
+You have risen to the rank of a Winner.</pre><ul class="asserts"><li class="pass">&#10003; contains &quot;As you pick up the locket, it glows faintly. You feel a sense of accomplishment.&quot;</li><li class="pass">&#10003; contains &quot;Congratulations! You have found all the secrets of this place. You win!&quot;</li><li class="pass">&#10003; contains &quot;You have risen to the rank of a Winner.&quot;</li></ul></article></section><section class="line"><h2>entrance-hall · help</h2><article class="card pass"><div class="cmd">&#9989; &gt; help</div><pre class="out">This is a text adventure. Type commands in plain English.
+Most puzzles can be solved with simple two-word commands: VERB NOUN.
+Type VERBS for a full list of available commands.
+Type LOOK to see your surroundings. Type INVENTORY (or I) to check what you carry.</pre><ul class="asserts"><li class="pass">&#10003; contains &quot;This is a text adventure.&quot;</li><li class="pass">&#10003; contains &quot;VERB NOUN&quot;</li><li class="pass">&#10003; contains &quot;Type VERBS for a full list of available commands.&quot;</li></ul></article><article class="card pass"><div class="cmd">&#9989; &gt; verbs</div><pre class="out">Movement: NORTH (N), SOUTH (S), EAST (E), WEST (W), UP (U), DOWN (D)
+Looking: LOOK (L), EXAMINE (X) thing, SEARCH thing, LOOK IN/UNDER thing
+Taking: TAKE thing, DROP thing, PUT thing IN/ON thing
+Using: OPEN, CLOSE, LOCK/UNLOCK thing WITH key, PUSH, PULL, TURN ON/OFF
+Self: INVENTORY (I), WAIT (Z), WEAR thing, EAT thing
+Meta: SAVE, RESTORE, UNDO, SCORE, HELP, VERBS, RESTART, QUIT</pre><ul class="asserts"><li class="pass">&#10003; contains &quot;Movement:&quot;</li><li class="pass">&#10003; contains &quot;Looking:&quot;</li><li class="pass">&#10003; contains &quot;Taking:&quot;</li><li class="pass">&#10003; contains &quot;Using:&quot;</li><li class="pass">&#10003; contains &quot;Meta:&quot;</li></ul></article><article class="card pass"><div class="cmd">&#9989; &gt; examine chandelier</div><pre class="out">An ornate chandelier with dozens of sparkling crystals.</pre><ul class="asserts"><li class="pass">&#10003; contains &quot;An ornate chandelier with dozens of sparkling crystals.&quot;</li></ul></article><article class="card pass"><div class="cmd">&#9989; &gt; inspect chandelier</div><pre class="out">An ornate chandelier with dozens of sparkling crystals.</pre><ul class="asserts"><li class="pass">&#10003; contains &quot;An ornate chandelier with dozens of sparkling crystals.&quot;</li></ul></article><article class="card pass"><div class="cmd">&#9989; &gt; study chandelier</div><pre class="out">An ornate chandelier with dozens of sparkling crystals.</pre><ul class="asserts"><li class="pass">&#10003; contains &quot;An ornate chandelier with dozens of sparkling crystals.&quot;</li></ul></article><article class="card pass"><div class="cmd">&#9989; &gt; view chandelier</div><pre class="out">An ornate chandelier with dozens of sparkling crystals.</pre><ul class="asserts"><li class="pass">&#10003; contains &quot;An ornate chandelier with dozens of sparkling crystals.&quot;</li></ul></article><article class="card pass"><div class="cmd">&#9989; &gt; peruse chandelier</div><pre class="out">An ornate chandelier with dozens of sparkling crystals.</pre><ul class="asserts"><li class="pass">&#10003; contains &quot;An ornate chandelier with dozens of sparkling crystals.&quot;</li></ul></article><article class="card pass"><div class="cmd">&#9989; &gt; use brass key</div><pre class="out">How do you want to use that? Try a specific verb: OPEN, PUSH, PULL, TURN, EAT, WEAR, etc.</pre><ul class="asserts"><li class="pass">&#10003; contains &quot;How do you want to use that?&quot;</li></ul></article><article class="card pass"><div class="cmd">&#9989; &gt; use brass key on chandelier</div><pre class="out">Try a specific command, such as UNLOCK it WITH the key, PUT it ON something, or GIVE it TO someone.</pre><ul class="asserts"><li class="pass">&#10003; contains &quot;Try a specific command, such as UNLOCK it WITH the key&quot;</li></ul></article><article class="card pass"><div class="cmd">&#9989; &gt; flurble</div><pre class="out">I don&#x27;t understand that.</pre><ul class="asserts"><li class="pass">&#10003; contains &quot;I don&#x27;t understand that.&quot;</li></ul></article><article class="card pass"><div class="cmd">&#9989; &gt; examine dragon</div><pre class="out">You can&#x27;t see any such thing.</pre><ul class="asserts"><li class="pass">&#10003; contains &quot;You can&#x27;t see any such thing.&quot;</li></ul></article><article class="card pass"><div class="cmd">&#9989; &gt; talk to chandelier</div><pre class="out">To talk, try ASK person ABOUT topic or TELL person ABOUT topic.</pre><ul class="asserts"><li class="pass">&#10003; contains &quot;To talk, try ASK person ABOUT topic or TELL person ABOUT topic.&quot;</li></ul></article></section><section class="line"><h2>entrance-hall · grab brass key</h2><article class="card pass"><div class="cmd">&#9989; &gt; grab brass key</div><pre class="out">Taken.</pre><ul class="asserts"><li class="pass">&#10003; contains &quot;Taken.&quot;</li><li class="pass">&#10003; state player.inventory contains brass key</li></ul></article><article class="card pass"><div class="cmd">&#9989; &gt; proceed north</div><pre class="out">Library
+Tall bookshelves line every wall, crammed with leather-bound volumes. A reading desk sits in the center of the room. A narrow staircase leads up.
+
+On the reading desk you see a dusty journal.</pre><ul class="asserts"><li class="pass">&#10003; contains &quot;Library&quot;</li><li class="pass">&#10003; contains &quot;On the reading desk you see a dusty journal.&quot;</li><li class="pass">&#10003; state player.location = Library</li></ul></article><article class="card pass"><div class="cmd">&#9989; &gt; gaze</div><pre class="out">Library
+Tall bookshelves line every wall, crammed with leather-bound volumes. A reading desk sits in the center of the room. A narrow staircase leads up.
+
+On the reading desk you see a dusty journal.</pre><ul class="asserts"><li class="pass">&#10003; contains &quot;Library&quot;</li><li class="pass">&#10003; contains &quot;Tall bookshelves line every wall&quot;</li></ul></article><article class="card pass"><div class="cmd">&#9989; &gt; force journal</div><pre class="out">You open the dusty journal.
+
+You flip through the journal. Most entries are illegible, but one page reads: &quot;The treasure is hidden where water meets stone.&quot;</pre><ul class="asserts"><li class="pass">&#10003; contains &quot;You open the dusty journal.&quot;</li><li class="pass">&#10003; contains &quot;The treasure is hidden where water meets stone.&quot;</li><li class="pass">&#10003; state the dusty journal is consulted</li></ul></article><article class="card pass"><div class="cmd">&#9989; &gt; lift journal</div><pre class="out">You take the dusty journal from the reading desk.</pre><ul class="asserts"><li class="pass">&#10003; contains &quot;You take the dusty journal from the reading desk.&quot;</li></ul></article><article class="card pass"><div class="cmd">&#9989; &gt; head south</div><pre class="out">Entrance Hall
+A grand hall with marble floors and high ceilings. A crystal chandelier hangs overhead. Exits lead north to a library, east to a kitchen, and south to a garden.</pre><ul class="asserts"><li class="pass">&#10003; contains &quot;Entrance Hall&quot;</li></ul></article><article class="card pass"><div class="cmd">&#9989; &gt; head east</div><pre class="out">Kitchen
+A rustic kitchen with a stone hearth and a heavy wooden table. The smell of old spices lingers in the air. A doorway leads west back to the hall.
+
+On the wooden table you see a loaf of bread and a ceramic mug.</pre><ul class="asserts"><li class="pass">&#10003; contains &quot;Kitchen&quot;</li><li class="pass">&#10003; contains &quot;On the wooden table you see a loaf of bread and a ceramic mug.&quot;</li><li class="pass">&#10003; state player.location = Kitchen</li></ul></article><article class="card pass"><div class="cmd">&#9989; &gt; peer</div><pre class="out">Kitchen
+A rustic kitchen with a stone hearth and a heavy wooden table. The smell of old spices lingers in the air. A doorway leads west back to the hall.
+
+On the wooden table you see a loaf of bread and a ceramic mug.</pre><ul class="asserts"><li class="pass">&#10003; contains &quot;Kitchen&quot;</li><li class="pass">&#10003; contains &quot;The smell of old spices lingers in the air.&quot;</li></ul></article><article class="card pass"><div class="cmd">&#9989; &gt; snag bread</div><pre class="out">You take the loaf of bread from the wooden table.</pre><ul class="asserts"><li class="pass">&#10003; contains &quot;You take the loaf of bread from the wooden table.&quot;</li></ul></article><article class="card pass"><div class="cmd">&#9989; &gt; obtain mug</div><pre class="out">You take the ceramic mug from the wooden table.</pre><ul class="asserts"><li class="pass">&#10003; contains &quot;You take the ceramic mug from the wooden table.&quot;</li></ul></article><article class="card pass"><div class="cmd">&#9989; &gt; consume bread</div><pre class="out">You eat the loaf of bread.</pre><ul class="asserts"><li class="pass">&#10003; contains &quot;You eat the loaf of bread.&quot;</li></ul></article><article class="card pass"><div class="cmd">&#9989; &gt; toss mug</div><pre class="out">Dropped.</pre><ul class="asserts"><li class="pass">&#10003; contains &quot;Dropped.&quot;</li></ul></article><article class="card pass"><div class="cmd">&#9989; &gt; shove table</div><pre class="out">The wooden table is fixed in place.</pre><ul class="asserts"><li class="pass">&#10003; contains &quot;The wooden table is fixed in place.&quot;</li></ul></article><article class="card pass"><div class="cmd">&#9989; &gt; yank table</div><pre class="out">The wooden table is not something you can pull.</pre><ul class="asserts"><li class="pass">&#10003; contains &quot;The wooden table is not something you can pull.&quot;</li></ul></article><article class="card pass"><div class="cmd">&#9989; &gt; head west</div><pre class="out">Entrance Hall
+A grand hall with marble floors and high ceilings. A crystal chandelier hangs overhead. Exits lead north to a library, east to a kitchen, and south to a garden.</pre><ul class="asserts"><li class="pass">&#10003; contains &quot;Entrance Hall&quot;</li></ul></article><article class="card pass"><div class="cmd">&#9989; &gt; head south</div><pre class="out">Garden
+A walled garden overgrown with ivy and wildflowers. A stone fountain stands in the center, dry and cracked. A path continues south to a pond.
+
+You can see a rusty coin here.</pre><ul class="asserts"><li class="pass">&#10003; contains &quot;Garden&quot;</li><li class="pass">&#10003; contains &quot;You can see a rusty coin here.&quot;</li></ul></article><article class="card pass"><div class="cmd">&#9989; &gt; collect rusty coin</div><pre class="out">Taken.
+
+You brush off the grime. Despite its age, the coin has a satisfying weight.</pre><ul class="asserts"><li class="pass">&#10003; contains &quot;Taken.&quot;</li><li class="pass">&#10003; contains &quot;You brush off the grime.&quot;</li><li class="pass">&#10003; state the rusty coin is polished</li></ul></article><article class="card pass"><div class="cmd">&#9989; &gt; score</div><pre class="out">You have scored 4 out of 10, earning you the rank of a Beginner.</pre><ul class="asserts"><li class="pass">&#10003; contains &quot;You have scored 4 out of 10, earning you the rank of a Beginner.&quot;</li></ul></article><article class="card pass"><div class="cmd">&#9989; &gt; head south</div><pre class="out">Pond
+A small, murky pond surrounded by reeds and flat stones. The water is still and dark. The garden lies back to the north.</pre><ul class="asserts"><li class="pass">&#10003; contains &quot;Pond&quot;</li></ul></article><article class="card pass"><div class="cmd">&#9989; &gt; prod flat stones</div><pre class="out">You push the flat stones.
+
+You push aside one of the loose stones and discover a golden ring hidden beneath it!
+
+You have risen to the rank of an Explorer.</pre><ul class="asserts"><li class="pass">&#10003; contains &quot;You push the flat stones.&quot;</li><li class="pass">&#10003; contains &quot;discover a golden ring hidden beneath it!&quot;</li><li class="pass">&#10003; contains &quot;You have risen to the rank of an Explorer.&quot;</li><li class="pass">&#10003; state the golden ring is found</li></ul></article><article class="card pass"><div class="cmd">&#9989; &gt; prod stones</div><pre class="out">You already found what was hidden here.</pre><ul class="asserts"><li class="pass">&#10003; contains &quot;You already found what was hidden here.&quot;</li></ul></article><article class="card pass"><div class="cmd">&#9989; &gt; fetch golden ring</div><pre class="out">Taken.</pre><ul class="asserts"><li class="pass">&#10003; contains &quot;Taken.&quot;</li><li class="pass">&#10003; state player.inventory contains golden ring</li></ul></article><article class="card pass"><div class="cmd">&#9989; &gt; head north</div><pre class="out">Garden
+A walled garden overgrown with ivy and wildflowers. A stone fountain stands in the center, dry and cracked. A path continues south to a pond.</pre><ul class="asserts"><li class="pass">&#10003; contains &quot;Garden&quot;</li></ul></article><article class="card pass"><div class="cmd">&#9989; &gt; head north</div><pre class="out">Entrance Hall
+A grand hall with marble floors and high ceilings. A crystal chandelier hangs overhead. Exits lead north to a library, east to a kitchen, and south to a garden.</pre><ul class="asserts"><li class="pass">&#10003; contains &quot;Entrance Hall&quot;</li></ul></article><article class="card pass"><div class="cmd">&#9989; &gt; proceed north</div><pre class="out">Library
+Tall bookshelves line every wall, crammed with leather-bound volumes. A reading desk sits in the center of the room. A narrow staircase leads up.</pre><ul class="asserts"><li class="pass">&#10003; contains &quot;Library&quot;</li></ul></article><article class="card pass"><div class="cmd">&#9989; &gt; proceed up</div><pre class="out">Study
+A cozy room at the top of the narrow staircase. A wooden cabinet stands against one wall. The only exit is back down.</pre><ul class="asserts"><li class="pass">&#10003; contains &quot;Study&quot;</li><li class="pass">&#10003; contains &quot;A wooden cabinet stands against one wall.&quot;</li></ul></article><article class="card pass"><div class="cmd">&#9989; &gt; pry cabinet</div><pre class="out">The wooden cabinet is locked.</pre><ul class="asserts"><li class="pass">&#10003; contains &quot;The wooden cabinet is locked.&quot;</li></ul></article><article class="card pass"><div class="cmd">&#9989; &gt; steal silver locket</div><pre class="out">You can&#x27;t see any such thing.</pre><ul class="asserts"><li class="pass">&#10003; contains &quot;You can&#x27;t see any such thing.&quot;</li></ul></article><article class="card pass"><div class="cmd">&#9989; &gt; unlock cabinet with brass key</div><pre class="out">You unlock the wooden cabinet with the brass key.</pre><ul class="asserts"><li class="pass">&#10003; contains &quot;You unlock the wooden cabinet with the brass key.&quot;</li></ul></article><article class="card pass"><div class="cmd">&#9989; &gt; pry cabinet</div><pre class="out">You open the wooden cabinet.
+
+In the wooden cabinet you see a silver locket.</pre><ul class="asserts"><li class="pass">&#10003; contains &quot;You open the wooden cabinet.&quot;</li><li class="pass">&#10003; contains &quot;In the wooden cabinet you see a silver locket.&quot;</li></ul></article><article class="card pass"><div class="cmd">&#9989; &gt; steal silver locket</div><pre class="out">You take the silver locket from the wooden cabinet.
+
+As you pick up the locket, it glows faintly. You feel a sense of accomplishment.
+
+Congratulations! You have found all the secrets of this place. You win!
+
+You have risen to the rank of a Winner.</pre><ul class="asserts"><li class="pass">&#10003; contains &quot;As you pick up the locket, it glows faintly.&quot;</li><li class="pass">&#10003; contains &quot;Congratulations! You have found all the secrets of this place. You win!&quot;</li></ul></article></section><section class="line"><h2>library · open journal</h2><article class="card pass"><div class="cmd">&#9989; &gt; open journal</div><pre class="out">The dusty journal is already open.</pre><ul class="asserts"><li class="pass">&#10003; contains &quot;already open&quot;</li></ul></article><article class="card pass"><div class="cmd">&#9989; &gt; read journal</div><pre class="out">(first taking the dusty journal)
+
+You take the dusty journal from the reading desk.
+
+You flip through the journal. Most entries are illegible, but one page reads: &quot;The treasure is hidden where water meets stone.&quot;</pre><ul class="asserts"><li class="pass">&#10003; contains &quot;The treasure is hidden where water meets stone.&quot;</li></ul></article><article class="card pass"><div class="cmd">&#9989; &gt; score</div><pre class="out">You have scored 2 out of 10, earning you the rank of a Beginner.</pre><ul class="asserts"><li class="pass">&#10003; contains &quot;You have scored 2 out of 10&quot;</li></ul></article></section>
+</div>
+
+<script src="theme-listener.js"></script>
+<script>
+ThemeListener.init({
+  buildCSS: function(g, sb) {
+    return 'body { background: ' + g.bodyBg + ' !important; color: ' + g.bufferFg + ' !important; }\n' +
+      'header, .meta { color: ' + g.gridFg + ' !important; border-color: ' + g.gridBg + ' !important; }\n' +
+      'pre, code { color: ' + g.bufferFg + ' !important; font-family: ' + g.monoFamily + ' !important; }\n' +
+      '.ln { color: ' + g.gridFg + ' !important; }\n' +
+      '.cmd { color: ' + g.inputFg + ' !important; }\n' +
+      '* { scrollbar-color: ' + sb.thumb + ' ' + sb.track + '; }\n';
+  },
+  dispatchResize: false
+});
+</script>
+
+</body>
+</html>

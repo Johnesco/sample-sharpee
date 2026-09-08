@@ -1,0 +1,82 @@
+Entrance Hall
+A grand hall with marble floors and high ceilings. A crystal chandelier hangs overhead. Exits lead north to a library, east to a kitchen, and south to a garden.
+
+You can see a brass key here.
+
+> take brass key
+Taken.
+
+> n
+Library
+Tall bookshelves line every wall, crammed with leather-bound volumes. A reading desk sits in the center of the room. A narrow staircase leads up.
+
+On the reading desk you see a dusty journal.
+
+> open journal
+You open the dusty journal.
+
+You flip through the journal. Most entries are illegible, but one page reads: "The treasure is hidden where water meets stone."
+
+> s
+Entrance Hall
+A grand hall with marble floors and high ceilings. A crystal chandelier hangs overhead. Exits lead north to a library, east to a kitchen, and south to a garden.
+
+> s
+Garden
+A walled garden overgrown with ivy and wildflowers. A stone fountain stands in the center, dry and cracked. A path continues south to a pond.
+
+You can see a rusty coin here.
+
+> take rusty coin
+Taken.
+
+You brush off the grime. Despite its age, the coin has a satisfying weight.
+
+> s
+Pond
+A small, murky pond surrounded by reeds and flat stones. The water is still and dark. The garden lies back to the north.
+
+> push flat stones
+You push the flat stones.
+
+You push aside one of the loose stones and discover a golden ring hidden beneath it!
+
+You have risen to the rank of an Explorer.
+
+> take golden ring
+Taken.
+
+> n
+Garden
+A walled garden overgrown with ivy and wildflowers. A stone fountain stands in the center, dry and cracked. A path continues south to a pond.
+
+> n
+Entrance Hall
+A grand hall with marble floors and high ceilings. A crystal chandelier hangs overhead. Exits lead north to a library, east to a kitchen, and south to a garden.
+
+> n
+Library
+Tall bookshelves line every wall, crammed with leather-bound volumes. A reading desk sits in the center of the room. A narrow staircase leads up.
+
+On the reading desk you see a dusty journal.
+
+> up
+Study
+A cozy room at the top of the narrow staircase. A wooden cabinet stands against one wall. The only exit is back down.
+
+> unlock cabinet with brass key
+You unlock the wooden cabinet with the brass key.
+
+> open cabinet
+You open the wooden cabinet.
+
+In the wooden cabinet you see a silver locket.
+
+> take silver locket
+You take the silver locket from the wooden cabinet.
+
+As you pick up the locket, it glows faintly. You feel a sense of accomplishment.
+
+Congratulations! You have found all the secrets of this place. You win!
+
+You have risen to the rank of a Winner.

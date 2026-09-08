@@ -1,0 +1,37 @@
+{
+  "name": "sample-sharpee",
+  "version": "0.1.0",
+  "description": "A practice game for learning Chord: rooms, objects, and interactions.",
+  "private": true,
+  "scripts": {
+    "build": "sharpee build",
+    "build:browser": "sharpee build --browser",
+    "test": "sharpee test",
+    "play": "sharpee play"
+  },
+  "sharpee": {
+    "title": "Sample (Sharpee)",
+    "author": "John Googol"
+  },
+  "dependencies": {
+    "@sharpee/sharpee": "^5.0.0",
+    "@sharpee/chord": "^5.0.0",
+    "@sharpee/story-loader": "^5.0.0",
+    "@sharpee/engine": "^5.0.0",
+    "@sharpee/parser-en-us": "^5.0.0",
+    "@sharpee/lang-en-us": "^5.0.0",
+    "@sharpee/stdlib": "^5.0.0",
+    "@sharpee/platform-browser": "^5.0.0"
+  },
+  "devDependencies": {
+    "@sharpee/devkit": "^5.3.0",
+    "esbuild": "^0.20.0"
+  },
+  "keywords": [
+    "interactive-fiction",
+    "sharpee",
+    "chord"
+  ],
+  "author": "John Googol",
+  "license": "MIT"
+}
