@@ -1,0 +1,14 @@
+{
+  "generated": "derived from the story source",
+  "commands": 110,
+  "understood": 108,
+  "misses": 2,
+  "rooms_swept": 6,
+  "rooms_total": 6,
+  "things_covered": 16,
+  "things_total": 18,
+  "uncovered": [
+    "adventurer",
+    "golden ring"
+  ]
+}

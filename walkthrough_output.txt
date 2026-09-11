@@ -3,6 +3,27 @@ A grand hall with marble floors and high ceilings. A crystal chandelier hangs ov
 
 You can see a brass key here.
 
+> look
+Entrance Hall
+A grand hall with marble floors and high ceilings. A crystal chandelier hangs overhead. Exits lead north to a library, east to a kitchen, and south to a garden.
+
+You can see a brass key here.
+
+> x crystal chandelier
+An ornate chandelier with dozens of sparkling crystals.
+
+> x chandelier
+An ornate chandelier with dozens of sparkling crystals.
+
+> x brass key
+A small brass key with an intricate pattern etched into its handle.
+
+> i
+You aren't carrying anything.
+
+> x key
+A small brass key with an intricate pattern etched into its handle.
+
 > take brass key
 Taken.
 
@@ -11,6 +32,43 @@ Library
 Tall bookshelves line every wall, crammed with leather-bound volumes. A reading desk sits in the center of the room. A narrow staircase leads up.
 
 On the reading desk you see a dusty journal.
+
+> x bookshelves
+Rows upon rows of old books. Most are too faded to read.
+
+> x shelves
+Rows upon rows of old books. Most are too faded to read.
+
+> x reading desk
+A sturdy oak desk with a green leather writing surface.
+
+On the reading desk you see a dusty journal.
+
+> look on reading desk
+I don't understand that.
+
+> x desk
+A sturdy oak desk with a green leather writing surface.
+
+On the reading desk you see a dusty journal.
+
+> x dusty journal
+A leather-bound journal. The pages are yellowed with age.
+
+> read dusty journal
+(first taking the dusty journal)
+
+You take the dusty journal from the reading desk.
+
+You flip through the journal. Most entries are illegible, but one page reads: "The treasure is hidden where water meets stone."
+
+> i
+You are carrying:
+
+a brass key, dusty journal
+
+> x journal
+A leather-bound journal. The pages are yellowed with age.
 
 > open journal
 You open the dusty journal.
@@ -27,6 +85,29 @@ A walled garden overgrown with ivy and wildflowers. A stone fountain stands in t
 
 You can see a rusty coin here.
 
+> x stone fountain
+An old fountain carved with fish and waves. No water flows here anymore.
+
+> x fountain
+An old fountain carved with fish and waves. No water flows here anymore.
+
+> x ivy
+Thick green ivy covers much of the garden walls.
+
+> x vines
+Thick green ivy covers much of the garden walls.
+
+> x rusty coin
+An old coin, green with age. Some kind of face is stamped on one side.
+
+> i
+You are carrying:
+
+a brass key, dusty journal
+
+> x coin
+An old coin, green with age. Some kind of face is stamped on one side.
+
 > take rusty coin
 Taken.
 
@@ -35,6 +116,18 @@ You brush off the grime. Despite its age, the coin has a satisfying weight.
 > s
 Pond
 A small, murky pond surrounded by reeds and flat stones. The water is still and dark. The garden lies back to the north.
+
+> x reeds
+Tall reeds swaying slightly, even though there is no wind.
+
+> x reed
+Tall reeds swaying slightly, even though there is no wind.
+
+> x flat stones
+Smooth, flat stones line the edge of the pond. One of them looks loose.
+
+> x stone
+Smooth, flat stones line the edge of the pond. One of them looks loose.
 
 > push flat stones
 You push the flat stones.
@@ -58,11 +151,32 @@ A grand hall with marble floors and high ceilings. A crystal chandelier hangs ov
 Library
 Tall bookshelves line every wall, crammed with leather-bound volumes. A reading desk sits in the center of the room. A narrow staircase leads up.
 
-On the reading desk you see a dusty journal.
-
 > up
 Study
 A cozy room at the top of the narrow staircase. A wooden cabinet stands against one wall. The only exit is back down.
+
+> x wooden cabinet
+A tall cabinet made of dark walnut. It has a small brass lock.
+
+> look in wooden cabinet
+The wooden cabinet is closed.
+
+> look in wooden cabinet
+The wooden cabinet is closed.
+
+> x cabinet
+A tall cabinet made of dark walnut. It has a small brass lock.
+
+> x silver locket
+You can't see any such thing.
+
+> i
+You are carrying:
+
+a brass key, dusty journal, rusty coin, golden ring
+
+> x locket
+You can't see any such thing.
 
 > unlock cabinet with brass key
 You unlock the wooden cabinet with the brass key.
@@ -72,6 +186,136 @@ You open the wooden cabinet.
 
 In the wooden cabinet you see a silver locket.
 
+> down
+Library
+Tall bookshelves line every wall, crammed with leather-bound volumes. A reading desk sits in the center of the room. A narrow staircase leads up.
+
+> south
+Entrance Hall
+A grand hall with marble floors and high ceilings. A crystal chandelier hangs overhead. Exits lead north to a library, east to a kitchen, and south to a garden.
+
+> east
+Kitchen
+A rustic kitchen with a stone hearth and a heavy wooden table. The smell of old spices lingers in the air. A doorway leads west back to the hall.
+
+On the wooden table you see a loaf of bread and a ceramic mug.
+
+> x stone hearth
+A large hearth, cold now, with a few charred logs inside.
+
+> x hearth
+A large hearth, cold now, with a few charred logs inside.
+
+> x wooden table
+A rough-hewn table scarred by years of use.
+
+On the wooden table you see a loaf of bread and a ceramic mug.
+
+> look on wooden table
+I don't understand that.
+
+> x table
+A rough-hewn table scarred by years of use.
+
+On the wooden table you see a loaf of bread and a ceramic mug.
+
+> x loaf of bread
+A somewhat stale loaf of bread. Still edible, probably.
+
+> i
+You are carrying:
+
+a brass key, dusty journal, rusty coin, golden ring
+
+> x loaf
+A somewhat stale loaf of bread. Still edible, probably.
+
+> x ceramic mug
+A plain ceramic mug. It's empty.
+
+> look in ceramic mug
+The ceramic mug is empty.
+
+> look in ceramic mug
+The ceramic mug is empty.
+
+> i
+You are carrying:
+
+a brass key, dusty journal, rusty coin, golden ring
+
+> x mug
+A plain ceramic mug. It's empty.
+
+> west
+Entrance Hall
+A grand hall with marble floors and high ceilings. A crystal chandelier hangs overhead. Exits lead north to a library, east to a kitchen, and south to a garden.
+
+> take crystal chandelier
+The crystal chandelier is fixed in place.
+
+> take brass key
+You already have the brass key.
+
+> drop brass key
+Dropped.
+
+> north
+Library
+Tall bookshelves line every wall, crammed with leather-bound volumes. A reading desk sits in the center of the room. A narrow staircase leads up.
+
+> take bookshelves
+The bookshelves are fixed in place.
+
+> take reading desk
+The reading desk is fixed in place.
+
+> open dusty journal
+The dusty journal is already open.
+
+> close dusty journal
+You close the dusty journal.
+
+> open dusty journal
+You open the dusty journal.
+
+You flip through the journal. Most entries are illegible, but one page reads: "The treasure is hidden where water meets stone."
+
+> take dusty journal
+You already have the dusty journal.
+
+> drop dusty journal
+Dropped.
+
+> up
+Study
+A cozy room at the top of the narrow staircase. A wooden cabinet stands against one wall. The only exit is back down.
+
+In the wooden cabinet you see a silver locket.
+
+> open wooden cabinet
+The wooden cabinet is already open.
+
+> close wooden cabinet
+You close the wooden cabinet.
+
+> open wooden cabinet
+You open the wooden cabinet.
+
+In the wooden cabinet you see a silver locket.
+
+> unlock wooden cabinet
+The wooden cabinet is already unlocked.
+
+> open wooden cabinet
+The wooden cabinet is already open.
+
+> open wooden cabinet
+The wooden cabinet is already open.
+
+> take wooden cabinet
+The wooden cabinet is fixed in place.
+
 > take silver locket
 You take the silver locket from the wooden cabinet.
 
@@ -80,3 +324,78 @@ As you pick up the locket, it glows faintly. You feel a sense of accomplishment.
 Congratulations! You have found all the secrets of this place. You win!
 
 You have risen to the rank of a Winner.
+
+> drop silver locket
+Error: Engine is not running
+
+> down
+Error: Engine is not running
+
+> south
+Error: Engine is not running
+
+> east
+Error: Engine is not running
+
+> take stone hearth
+Error: Engine is not running
+
+> take wooden table
+Error: Engine is not running
+
+> eat loaf of bread
+Error: Engine is not running
+
+> take loaf of bread
+Error: Engine is not running
+
+> drop loaf of bread
+Error: Engine is not running
+
+> open ceramic mug
+Error: Engine is not running
+
+> take ceramic mug
+Error: Engine is not running
+
+> drop ceramic mug
+Error: Engine is not running
+
+> west
+Error: Engine is not running
+
+> south
+Error: Engine is not running
+
+> take stone fountain
+Error: Engine is not running
+
+> take ivy
+Error: Engine is not running
+
+> take rusty coin
+Error: Engine is not running
+
+> drop rusty coin
+Error: Engine is not running
+
+> south
+Error: Engine is not running
+
+> take reeds
+Error: Engine is not running
+
+> push flat stones
+Error: Engine is not running
+
+> take flat stones
+Error: Engine is not running
+
+> score
+Error: Engine is not running
+
+> inventory
+Error: Engine is not running
+
+> take silver locket
+Error: Engine is not running

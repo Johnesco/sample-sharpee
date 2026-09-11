@@ -1,16 +1,110 @@
+look
+x crystal chandelier
+x chandelier
+x brass key
+i
+x key
 take brass key
 n
+x bookshelves
+x shelves
+x reading desk
+look on reading desk
+x desk
+x dusty journal
+read dusty journal
+i
+x journal
 open journal
 s
 s
+x stone fountain
+x fountain
+x ivy
+x vines
+x rusty coin
+i
+x coin
 take rusty coin
 s
+x reeds
+x reed
+x flat stones
+x stone
 push flat stones
 take golden ring
 n
 n
 n
 up
+x wooden cabinet
+look in wooden cabinet
+look in wooden cabinet
+x cabinet
+x silver locket
+i
+x locket
 unlock cabinet with brass key
 open cabinet
+down
+south
+east
+x stone hearth
+x hearth
+x wooden table
+look on wooden table
+x table
+x loaf of bread
+i
+x loaf
+x ceramic mug
+look in ceramic mug
+look in ceramic mug
+i
+x mug
+west
+take crystal chandelier
+take brass key
+drop brass key
+north
+take bookshelves
+take reading desk
+open dusty journal
+close dusty journal
+open dusty journal
+take dusty journal
+drop dusty journal
+up
+open wooden cabinet
+close wooden cabinet
+open wooden cabinet
+unlock wooden cabinet
+open wooden cabinet
+open wooden cabinet
+take wooden cabinet
+take silver locket
+drop silver locket
+down
+south
+east
+take stone hearth
+take wooden table
+eat loaf of bread
+take loaf of bread
+drop loaf of bread
+open ceramic mug
+take ceramic mug
+drop ceramic mug
+west
+south
+take stone fountain
+take ivy
+take rusty coin
+drop rusty coin
+south
+take reeds
+push flat stones
+take flat stones
+score
+inventory
 take silver locket

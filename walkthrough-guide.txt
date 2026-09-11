@@ -1,0 +1,168 @@
+# sample-sharpee — full-coverage walkthrough
+#
+# Not a completion walkthrough. It follows the solved path through the
+# story, and the first time the player stands in each room it exercises
+# every thing there the way that thing's traits allow: examine, read,
+# open and close, switch on and off, look inside, take and drop, talk
+# to, and any verb the story defines itself. Refusals are coverage too
+# — taking scenery should fail, and the transcript records that it did.
+#
+# 6 of 6 rooms swept, 16 of 18 things exercised, 110 commands.
+#
+# Not exercised — held inside a closed thing, carried from the
+# start, or the player character itself: adventurer, golden ring.
+
+## Entrance Hall
+
+> look
+> x crystal chandelier
+> x chandelier
+> x brass key
+> i
+> x key
+> take brass key
+
+## Library
+
+> n
+> x bookshelves
+> x shelves
+> x reading desk
+> look on reading desk
+> x desk
+> x dusty journal
+> read dusty journal
+> i
+> x journal
+> open journal
+
+## Entrance Hall
+
+> s
+
+## Garden
+
+> s
+> x stone fountain
+> x fountain
+> x ivy
+> x vines
+> x rusty coin
+> i
+> x coin
+> take rusty coin
+
+## Pond
+
+> s
+> x reeds
+> x reed
+> x flat stones
+> x stone
+> push flat stones
+> take golden ring
+
+## Garden
+
+> n
+
+## Entrance Hall
+
+> n
+
+## Library
+
+> n
+
+## Study
+
+> up
+> x wooden cabinet
+> look in wooden cabinet
+> look in wooden cabinet
+> x cabinet
+> x silver locket
+> i
+> x locket
+> unlock cabinet with brass key
+> open cabinet
+
+## Library
+
+> down
+
+## Entrance Hall
+
+> south
+
+## Kitchen
+
+> east
+> x stone hearth
+> x hearth
+> x wooden table
+> look on wooden table
+> x table
+> x loaf of bread
+> i
+> x loaf
+> x ceramic mug
+> look in ceramic mug
+> look in ceramic mug
+> i
+> x mug
+
+## Entrance Hall
+
+> west
+> take crystal chandelier
+> take brass key
+> drop brass key
+
+## Library
+
+> north
+> take bookshelves
+> take reading desk
+> open dusty journal
+> close dusty journal
+> open dusty journal
+> take dusty journal
+> drop dusty journal
+
+## Study
+
+> up
+> open wooden cabinet
+> close wooden cabinet
+> open wooden cabinet
+> unlock wooden cabinet
+> open wooden cabinet
+> open wooden cabinet
+> take wooden cabinet
+> take silver locket
+> drop silver locket
+> down
+> south
+> east
+> take stone hearth
+> take wooden table
+> eat loaf of bread
+> take loaf of bread
+> drop loaf of bread
+> open ceramic mug
+> take ceramic mug
+> drop ceramic mug
+> west
+> south
+> take stone fountain
+> take ivy
+> take rusty coin
+> drop rusty coin
+> south
+> take reeds
+> push flat stones
+> take flat stones
+> score
+> inventory
+> take silver locket
