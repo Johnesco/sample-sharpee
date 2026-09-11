@@ -7,7 +7,7 @@
 # to, and any verb the story defines itself. Refusals are coverage too
 # — taking scenery should fail, and the transcript records that it did.
 #
-# 6 of 6 rooms swept, 16 of 18 things exercised, 110 commands.
+# 6 of 6 rooms swept, 16 of 18 things exercised, 101 commands.
 #
 # Not exercised — held inside a closed thing, carried from the
 # start, or the player character itself: adventurer, golden ring.
@@ -18,7 +18,6 @@
 > x crystal chandelier
 > x chandelier
 > x brass key
-> i
 > x key
 > take brass key
 
@@ -32,7 +31,6 @@
 > x desk
 > x dusty journal
 > read dusty journal
-> i
 > x journal
 > open journal
 
@@ -48,7 +46,6 @@
 > x ivy
 > x vines
 > x rusty coin
-> i
 > x coin
 > take rusty coin
 
@@ -79,10 +76,8 @@
 > up
 > x wooden cabinet
 > look in wooden cabinet
-> look in wooden cabinet
 > x cabinet
 > x silver locket
-> i
 > x locket
 > unlock cabinet with brass key
 > open cabinet
@@ -104,12 +99,9 @@
 > look on wooden table
 > x table
 > x loaf of bread
-> i
 > x loaf
 > x ceramic mug
 > look in ceramic mug
-> look in ceramic mug
-> i
 > x mug
 
 ## Entrance Hall
@@ -164,5 +156,4 @@
 > push flat stones
 > take flat stones
 > score
-> inventory
 > take silver locket

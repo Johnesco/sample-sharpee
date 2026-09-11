@@ -18,9 +18,6 @@ An ornate chandelier with dozens of sparkling crystals.
 > x brass key
 A small brass key with an intricate pattern etched into its handle.
 
-> i
-You aren't carrying anything.
-
 > x key
 A small brass key with an intricate pattern etched into its handle.
 
@@ -62,11 +59,6 @@ You take the dusty journal from the reading desk.
 
 You flip through the journal. Most entries are illegible, but one page reads: "The treasure is hidden where water meets stone."
 
-> i
-You are carrying:
-
-a brass key, dusty journal
-
 > x journal
 A leather-bound journal. The pages are yellowed with age.
 
@@ -99,11 +91,6 @@ Thick green ivy covers much of the garden walls.
 
 > x rusty coin
 An old coin, green with age. Some kind of face is stamped on one side.
-
-> i
-You are carrying:
-
-a brass key, dusty journal
 
 > x coin
 An old coin, green with age. Some kind of face is stamped on one side.
@@ -161,19 +148,11 @@ A tall cabinet made of dark walnut. It has a small brass lock.
 > look in wooden cabinet
 The wooden cabinet is closed.
 
-> look in wooden cabinet
-The wooden cabinet is closed.
-
 > x cabinet
 A tall cabinet made of dark walnut. It has a small brass lock.
 
 > x silver locket
 You can't see any such thing.
-
-> i
-You are carrying:
-
-a brass key, dusty journal, rusty coin, golden ring
 
 > x locket
 You can't see any such thing.
@@ -222,11 +201,6 @@ On the wooden table you see a loaf of bread and a ceramic mug.
 > x loaf of bread
 A somewhat stale loaf of bread. Still edible, probably.
 
-> i
-You are carrying:
-
-a brass key, dusty journal, rusty coin, golden ring
-
 > x loaf
 A somewhat stale loaf of bread. Still edible, probably.
 
@@ -235,14 +209,6 @@ A plain ceramic mug. It's empty.
 
 > look in ceramic mug
 The ceramic mug is empty.
-
-> look in ceramic mug
-The ceramic mug is empty.
-
-> i
-You are carrying:
-
-a brass key, dusty journal, rusty coin, golden ring
 
 > x mug
 A plain ceramic mug. It's empty.
@@ -392,9 +358,6 @@ Error: Engine is not running
 Error: Engine is not running
 
 > score
-Error: Engine is not running
-
-> inventory
 Error: Engine is not running
 
 > take silver locket

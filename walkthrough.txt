@@ -2,7 +2,6 @@ look
 x crystal chandelier
 x chandelier
 x brass key
-i
 x key
 take brass key
 n
@@ -13,7 +12,6 @@ look on reading desk
 x desk
 x dusty journal
 read dusty journal
-i
 x journal
 open journal
 s
@@ -23,7 +21,6 @@ x fountain
 x ivy
 x vines
 x rusty coin
-i
 x coin
 take rusty coin
 s
@@ -39,10 +36,8 @@ n
 up
 x wooden cabinet
 look in wooden cabinet
-look in wooden cabinet
 x cabinet
 x silver locket
-i
 x locket
 unlock cabinet with brass key
 open cabinet
@@ -55,12 +50,9 @@ x wooden table
 look on wooden table
 x table
 x loaf of bread
-i
 x loaf
 x ceramic mug
 look in ceramic mug
-look in ceramic mug
-i
 x mug
 west
 take crystal chandelier
@@ -106,5 +98,4 @@ take reeds
 push flat stones
 take flat stones
 score
-inventory
 take silver locket
