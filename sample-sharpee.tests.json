@@ -147,7 +147,19 @@
     { "type": "turn", "command": "unlock cabinet with brass key",
       "assertions": { "contains": ["You unlock the wooden cabinet with the brass key."] } },
     { "type": "turn", "command": "open cabinet",
-      "assertions": { "contains": ["You open the wooden cabinet.", "In the wooden cabinet you see a silver locket."] } },
+      "assertions": { "contains": ["You open the wooden cabinet.", "In the wooden cabinet you see a silver locket."] },
+      "branches": [
+        { "branch": 4, "cards": [
+          { "type": "turn", "command": "take silver locket",
+            "assertions": { "contains": ["As you pick up the locket, it glows faintly. You feel a sense of accomplishment.", "Congratulations! You have found all the secrets of this place. You win!", "You have risen to the rank of a Winner."] } },
+          { "type": "turn", "command": "look",
+            "assertions": { "contains": ["The game has ended"] } },
+          { "type": "turn", "command": "restart",
+            "assertions": { "contains": ["The story restarts."] } },
+          { "type": "turn", "command": "look",
+            "assertions": { "contains": ["Entrance Hall"], "notContains": ["The game has ended"] } }
+        ] }
+      ] },
     { "type": "turn", "command": "take silver locket",
       "assertions": { "contains": ["As you pick up the locket, it glows faintly. You feel a sense of accomplishment.", "Congratulations! You have found all the secrets of this place. You win!", "You have risen to the rank of a Winner."] } }
   ]
