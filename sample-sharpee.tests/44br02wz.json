@@ -1,0 +1,350 @@
+{
+  "cards": [
+    {
+      "assertions": {
+        "contains": [
+          "Taken."
+        ],
+        "states": [
+          "player.inventory contains brass key"
+        ]
+      },
+      "command": "grab brass key",
+      "id": "wbi2rzki",
+      "type": "turn"
+    },
+    {
+      "assertions": {
+        "contains": [
+          "Library",
+          "On the reading desk you see a dusty journal."
+        ],
+        "states": [
+          "player.location = Library"
+        ]
+      },
+      "command": "proceed north",
+      "id": "6wuma4ps",
+      "type": "turn"
+    },
+    {
+      "assertions": {
+        "contains": [
+          "Library",
+          "Tall bookshelves line every wall"
+        ]
+      },
+      "command": "gaze",
+      "id": "mlz0knh1",
+      "type": "turn"
+    },
+    {
+      "assertions": {
+        "contains": [
+          "You open the dusty journal.",
+          "The treasure is hidden where water meets stone."
+        ],
+        "states": [
+          "the dusty journal is consulted"
+        ]
+      },
+      "command": "force journal",
+      "id": "z3algsab",
+      "type": "turn"
+    },
+    {
+      "assertions": {
+        "contains": [
+          "You take the dusty journal from the reading desk."
+        ]
+      },
+      "command": "lift journal",
+      "id": "0cpsp53x",
+      "type": "turn"
+    },
+    {
+      "assertions": {
+        "contains": [
+          "Entrance Hall"
+        ]
+      },
+      "command": "head south",
+      "id": "fyf5pbqb",
+      "type": "turn"
+    },
+    {
+      "assertions": {
+        "contains": [
+          "Kitchen",
+          "On the wooden table you see a loaf of bread and a ceramic mug."
+        ],
+        "states": [
+          "player.location = Kitchen"
+        ]
+      },
+      "command": "head east",
+      "id": "o1ugnto1",
+      "type": "turn"
+    },
+    {
+      "assertions": {
+        "contains": [
+          "Kitchen",
+          "The smell of old spices lingers in the air."
+        ]
+      },
+      "command": "peer",
+      "id": "tg3m8iy2",
+      "type": "turn"
+    },
+    {
+      "assertions": {
+        "contains": [
+          "You take the loaf of bread from the wooden table."
+        ]
+      },
+      "command": "snag bread",
+      "id": "agutwpqq",
+      "type": "turn"
+    },
+    {
+      "assertions": {
+        "contains": [
+          "You take the ceramic mug from the wooden table."
+        ]
+      },
+      "command": "obtain mug",
+      "id": "75767hkr",
+      "type": "turn"
+    },
+    {
+      "assertions": {
+        "contains": [
+          "You eat the loaf of bread."
+        ]
+      },
+      "command": "consume bread",
+      "id": "n4kgpts6",
+      "type": "turn"
+    },
+    {
+      "assertions": {
+        "contains": [
+          "Dropped."
+        ]
+      },
+      "command": "toss mug",
+      "id": "anwa6baa",
+      "type": "turn"
+    },
+    {
+      "assertions": {
+        "contains": [
+          "The wooden table is fixed in place."
+        ]
+      },
+      "command": "shove table",
+      "id": "agps8tg1",
+      "type": "turn"
+    },
+    {
+      "assertions": {
+        "contains": [
+          "The wooden table is not something you can pull."
+        ]
+      },
+      "command": "yank table",
+      "id": "mecynwx4",
+      "type": "turn"
+    },
+    {
+      "assertions": {
+        "contains": [
+          "Entrance Hall"
+        ]
+      },
+      "command": "head west",
+      "id": "fy8kdn20",
+      "type": "turn"
+    },
+    {
+      "assertions": {
+        "contains": [
+          "Garden",
+          "You can see a rusty coin here."
+        ]
+      },
+      "command": "head south",
+      "id": "cjcxvzg9",
+      "type": "turn"
+    },
+    {
+      "assertions": {
+        "contains": [
+          "Taken.",
+          "You brush off the grime."
+        ],
+        "states": [
+          "the rusty coin is polished"
+        ]
+      },
+      "command": "collect rusty coin",
+      "id": "ga5qmpox",
+      "type": "turn"
+    },
+    {
+      "assertions": {
+        "contains": [
+          "You have scored 4 out of 10, earning you the rank of a Beginner."
+        ]
+      },
+      "command": "score",
+      "id": "voj6vadz",
+      "type": "turn"
+    },
+    {
+      "assertions": {
+        "contains": [
+          "Pond"
+        ]
+      },
+      "command": "head south",
+      "id": "5l1gmn6x",
+      "type": "turn"
+    },
+    {
+      "assertions": {
+        "contains": [
+          "You push the flat stones.",
+          "discover a golden ring hidden beneath it!",
+          "You have risen to the rank of an Explorer."
+        ],
+        "states": [
+          "the golden ring is found"
+        ]
+      },
+      "command": "prod flat stones",
+      "id": "zor2qxr2",
+      "type": "turn"
+    },
+    {
+      "assertions": {
+        "contains": [
+          "You already found what was hidden here."
+        ]
+      },
+      "command": "prod stones",
+      "id": "o3r5ixqh",
+      "type": "turn"
+    },
+    {
+      "assertions": {
+        "contains": [
+          "Taken."
+        ],
+        "states": [
+          "player.inventory contains golden ring"
+        ]
+      },
+      "command": "fetch golden ring",
+      "id": "yzobrdd9",
+      "type": "turn"
+    },
+    {
+      "assertions": {
+        "contains": [
+          "Garden"
+        ]
+      },
+      "command": "head north",
+      "id": "9mh088jd",
+      "type": "turn"
+    },
+    {
+      "assertions": {
+        "contains": [
+          "Entrance Hall"
+        ]
+      },
+      "command": "head north",
+      "id": "nv4jqsg6",
+      "type": "turn"
+    },
+    {
+      "assertions": {
+        "contains": [
+          "Library"
+        ]
+      },
+      "command": "proceed north",
+      "id": "x2xoko4j",
+      "type": "turn"
+    },
+    {
+      "assertions": {
+        "contains": [
+          "Study",
+          "A wooden cabinet stands against one wall."
+        ]
+      },
+      "command": "proceed up",
+      "id": "bchz3gci",
+      "type": "turn"
+    },
+    {
+      "assertions": {
+        "contains": [
+          "The wooden cabinet is locked."
+        ]
+      },
+      "command": "pry cabinet",
+      "id": "6tj0x4l6",
+      "type": "turn"
+    },
+    {
+      "assertions": {
+        "contains": [
+          "You can't see any such thing."
+        ]
+      },
+      "command": "steal silver locket",
+      "id": "au4udktx",
+      "type": "turn"
+    },
+    {
+      "assertions": {
+        "contains": [
+          "You unlock the wooden cabinet with the brass key."
+        ]
+      },
+      "command": "unlock cabinet with brass key",
+      "id": "8d927m8f",
+      "type": "turn"
+    },
+    {
+      "assertions": {
+        "contains": [
+          "You open the wooden cabinet.",
+          "In the wooden cabinet you see a silver locket."
+        ]
+      },
+      "command": "pry cabinet",
+      "id": "zu8owjsp",
+      "type": "turn"
+    },
+    {
+      "assertions": {
+        "contains": [
+          "As you pick up the locket, it glows faintly.",
+          "Congratulations! You have found all the secrets of this place. You win!"
+        ]
+      },
+      "command": "steal silver locket",
+      "id": "5814bpta",
+      "type": "turn"
+    }
+  ],
+  "id": "44br02wz",
+  "ordinal": 2,
+  "parent": "ian8unz4"
+}

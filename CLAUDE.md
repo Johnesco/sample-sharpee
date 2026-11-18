@@ -33,7 +33,7 @@ sample-sharpee/
 ├── CLAUDE.md                  THIS FILE
 ├── README.md                  public documentation
 ├── sample-sharpee.story       the game, one Chord file
-├── sample-sharpee.tests.json  tests document: the Inform regression suite as cards
+├── sample-sharpee.tests/     tests document: the Inform regression suite as cards
 ├── sample-sharpee.config.json IFID
 ├── ifhub.conf                 the IF Hub card
 ├── browser/sample-sharpee.css author CSS override
@@ -104,4 +104,5 @@ ADRs live in `docs/adr/` once the first one exists (index: `docs/adr/README.md`)
 ## Project History
 
 ### Recent Changes
+- 2026-11-18 (#1): moved to the current engine and the Chord 4 language. Every block names its kind first. HELP, COMMANDS and TALK TO / SPEAK TO / CHAT WITH are standard grammar the story's own actions had been taking silently; the story now says so with `remove from action help` and `remove from action talking`, so they answer exactly as before (TALK WITH and SPEAK WITH now get the same hint). The tests document is the `sample-sharpee.tests/` directory. 67 cards, 113 assertions. Built, not yet shipped.
 - 2026-09-08: Scaffolded with `tools/new_game.py` and translated from the Inform 7 Sample. Every command in the Inform regression suite was replayed against the Chord edition; only `use key on cabinet` differs (hint instead of unlock).

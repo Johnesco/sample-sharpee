@@ -1,0 +1,45 @@
+{
+  "cards": [
+    {
+      "assertions": {
+        "contains": [
+          "Taken."
+        ],
+        "states": [
+          "player.inventory contains brass key"
+        ]
+      },
+      "command": "take brass key",
+      "id": "5f0weghf",
+      "type": "turn"
+    },
+    {
+      "assertions": {
+        "contains": [
+          "Library",
+          "On the reading desk you see a dusty journal."
+        ]
+      },
+      "command": "n",
+      "id": "xvdt3hnx",
+      "type": "turn"
+    },
+    {
+      "assertions": {
+        "contains": [
+          "You open the dusty journal.",
+          "The treasure is hidden where water meets stone."
+        ],
+        "states": [
+          "the dusty journal is consulted"
+        ]
+      },
+      "command": "open journal",
+      "id": "f7un9tez",
+      "type": "turn"
+    }
+  ],
+  "id": "bnlrj8s7",
+  "ordinal": 0,
+  "parent": "ian8unz4"
+}

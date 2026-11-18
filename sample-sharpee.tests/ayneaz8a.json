@@ -1,0 +1,20 @@
+{
+  "cards": [
+    {
+      "assertions": {
+        "contains": [
+          "As you pick up the locket, it glows faintly. You feel a sense of accomplishment.",
+          "Congratulations! You have found all the secrets of this place. You win!",
+          "You have risen to the rank of a Winner."
+        ]
+      },
+      "command": "take silver locket",
+      "ending": "victory",
+      "id": "obfppcyr",
+      "type": "turn"
+    }
+  ],
+  "id": "ayneaz8a",
+  "ordinal": 0,
+  "parent": "bhhcvwsg"
+}

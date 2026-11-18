@@ -1,0 +1,42 @@
+{
+  "cards": [
+    {
+      "assertions": {
+        "contains": [
+          "As you pick up the locket, it glows faintly. You feel a sense of accomplishment.",
+          "Congratulations! You have found all the secrets of this place. You win!",
+          "You have risen to the rank of a Winner."
+        ]
+      },
+      "command": "take silver locket",
+      "id": "9oqbpilo",
+      "type": "turn"
+    },
+    {
+      "assertions": {
+        "contains": [
+          "The story restarts."
+        ]
+      },
+      "command": "restart",
+      "id": "zedxhewu",
+      "type": "turn"
+    },
+    {
+      "assertions": {
+        "contains": [
+          "Entrance Hall"
+        ],
+        "notContains": [
+          "The game has ended"
+        ]
+      },
+      "command": "look",
+      "id": "011xk3ba",
+      "type": "turn"
+    }
+  ],
+  "id": "q1wp8ex0",
+  "ordinal": 1,
+  "parent": "bhhcvwsg"
+}

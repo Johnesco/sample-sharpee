@@ -89,6 +89,7 @@ create the adventurer
 ## ===========================================================================
 
 create the crystal chandelier
+  a thing
   aka chandelier, crystals
   scenery
   in the Entrance Hall
@@ -96,6 +97,7 @@ create the crystal chandelier
   An ornate chandelier with dozens of sparkling crystals.
 
 create the brass key
+  a thing
   aka key
   in the Entrance Hall
 
@@ -106,6 +108,7 @@ create the brass key
 ## ===========================================================================
 
 create the bookshelves
+  a thing
   aka shelves, books, volumes, bookshelf
   scenery, plural
   in the Library
@@ -113,13 +116,15 @@ create the bookshelves
   Rows upon rows of old books. Most are too faded to read.
 
 create the reading desk
+  a supporter
   aka desk
-  scenery, a supporter
+  scenery
   in the Library
 
   A sturdy oak desk with a green leather writing surface.
 
 create the dusty journal
+  a thing
   aka journal, book, pages
   openable, readable
   on the reading desk
@@ -140,14 +145,16 @@ create the dusty journal
   end on
 
 create the wooden cabinet
+  a container
   aka cabinet, walnut cabinet, lock
-  scenery, a container, openable, lockable with the brass key
+  scenery, openable, lockable with the brass key
   starts locked
   in the Study
 
   A tall cabinet made of dark walnut. It has a small brass lock.
 
 create the silver locket
+  a thing
   aka locket, chain
   in the wooden cabinet
   states: warm, glowing
@@ -165,6 +172,7 @@ create the silver locket
 ## ===========================================================================
 
 create the stone hearth
+  a thing
   aka hearth, logs
   scenery
   in the Kitchen
@@ -172,13 +180,15 @@ create the stone hearth
   A large hearth, cold now, with a few charred logs inside.
 
 create the wooden table
+  a supporter
   aka table
-  scenery, a supporter
+  scenery
   in the Kitchen
 
   A rough-hewn table scarred by years of use.
 
 create the loaf of bread
+  a thing
   aka loaf, bread
   edible
   on the wooden table
@@ -197,6 +207,7 @@ create the ceramic mug
 ## ===========================================================================
 
 create the stone fountain
+  a thing
   aka fountain
   scenery
   in the Garden
@@ -204,6 +215,7 @@ create the stone fountain
   An old fountain carved with fish and waves. No water flows here anymore.
 
 create the ivy
+  a thing
   aka vines, wildflowers, walls
   scenery
   in the Garden
@@ -211,6 +223,7 @@ create the ivy
   Thick green ivy covers much of the garden walls.
 
 create the rusty coin
+  a thing
   aka coin
   in the Garden
   states: grimy, polished
@@ -224,6 +237,7 @@ create the rusty coin
   end after
 
 create the reeds
+  a thing
   aka reed
   scenery, plural
   in the Pond
@@ -231,6 +245,7 @@ create the reeds
   Tall reeds swaying slightly, even though there is no wind.
 
 create the flat stones
+  a thing
   aka stone, stones, rock, rocks, loose stone
   scenery, plural, pushable
   in the Pond
@@ -251,6 +266,7 @@ create the flat stones
   end after
 
 create the golden ring
+  a thing
   aka ring, gold ring, band
   states: buried, found
 
@@ -260,12 +276,22 @@ create the golden ring
 ## VERB HELP
 ## ===========================================================================
 
+## Standard `help` grammar that `helping` takes for itself.
+
+remove from action help
+  help
+
 define action helping
   grammar
     help
     hint
     hints
   phrase help-text
+
+## Standard `help` grammar that `listing-verbs` takes for itself.
+
+remove from action help
+  commands
 
 define action listing-verbs
   grammar
@@ -287,10 +313,17 @@ define action using-with
   the other must be visible
   phrase use-with-hint
 
+## Standard `talking` grammar that `chatting` takes for itself.
+
+remove from action talking
+  talk to or with the target
+  speak to or with the target
+  chat with the target
+
 define action chatting
   grammar
-    talk to the target
-    speak to the target
+    talk to or with the target
+    speak to or with the target
     chat with the target
   the target must be visible
   phrase talk-hint

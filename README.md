@@ -12,7 +12,7 @@ This game is built and published from the Sharpee workspace, which holds the sha
 
 ```
 npx sharpee play                                   # play in the terminal
-npx sharpee test                                   # replay sample-sharpee.tests.json
+npx sharpee test                                   # replay sample-sharpee.tests/
 python ../tools/build.py sample-sharpee --force    # gates, build, tests, lay out the hub folder
 python C:/code/ifhub/tools/ship.py sample-sharpee  # publish and list on IF Hub
 ```

@@ -1,0 +1,32 @@
+{
+  "cards": [
+    {
+      "assertions": {
+        "channels": [
+          {
+            "id": "info.title",
+            "is": "Sample (Sharpee)"
+          },
+          {
+            "id": "info.description",
+            "is": "A practice game for learning Chord: rooms, objects, and interactions."
+          }
+        ]
+      },
+      "id": "jvathdmo",
+      "type": "opening"
+    },
+    {
+      "assertions": {
+        "contains": [
+          "Entrance Hall",
+          "A crystal chandelier hangs overhead.",
+          "You can see a brass key here."
+        ]
+      },
+      "id": "36vhq83d",
+      "type": "boot"
+    }
+  ],
+  "id": "ian8unz4"
+}

@@ -1,0 +1,133 @@
+{
+  "cards": [
+    {
+      "assertions": {
+        "contains": [
+          "This is a text adventure.",
+          "VERB NOUN",
+          "Type VERBS for a full list of available commands."
+        ]
+      },
+      "command": "help",
+      "id": "fz72a3cn",
+      "type": "turn"
+    },
+    {
+      "assertions": {
+        "contains": [
+          "Movement:",
+          "Looking:",
+          "Taking:",
+          "Using:",
+          "Meta:"
+        ]
+      },
+      "command": "verbs",
+      "id": "wj483pvs",
+      "type": "turn"
+    },
+    {
+      "assertions": {
+        "contains": [
+          "An ornate chandelier with dozens of sparkling crystals."
+        ]
+      },
+      "command": "examine chandelier",
+      "id": "1mb6qq88",
+      "type": "turn"
+    },
+    {
+      "assertions": {
+        "contains": [
+          "An ornate chandelier with dozens of sparkling crystals."
+        ]
+      },
+      "command": "inspect chandelier",
+      "id": "pli4lppx",
+      "type": "turn"
+    },
+    {
+      "assertions": {
+        "contains": [
+          "An ornate chandelier with dozens of sparkling crystals."
+        ]
+      },
+      "command": "study chandelier",
+      "id": "x66jo9ql",
+      "type": "turn"
+    },
+    {
+      "assertions": {
+        "contains": [
+          "An ornate chandelier with dozens of sparkling crystals."
+        ]
+      },
+      "command": "view chandelier",
+      "id": "aazgpjke",
+      "type": "turn"
+    },
+    {
+      "assertions": {
+        "contains": [
+          "An ornate chandelier with dozens of sparkling crystals."
+        ]
+      },
+      "command": "peruse chandelier",
+      "id": "y6dkdey7",
+      "type": "turn"
+    },
+    {
+      "assertions": {
+        "contains": [
+          "How do you want to use that?"
+        ]
+      },
+      "command": "use brass key",
+      "id": "vzvxwboz",
+      "type": "turn"
+    },
+    {
+      "assertions": {
+        "contains": [
+          "Try a specific command, such as UNLOCK it WITH the key"
+        ]
+      },
+      "command": "use brass key on chandelier",
+      "id": "jvzpk4b2",
+      "type": "turn"
+    },
+    {
+      "assertions": {
+        "contains": [
+          "I don't understand that."
+        ]
+      },
+      "command": "flurble",
+      "id": "o94tlq6y",
+      "type": "turn"
+    },
+    {
+      "assertions": {
+        "contains": [
+          "You can't see any such thing."
+        ]
+      },
+      "command": "examine dragon",
+      "id": "gx365ich",
+      "type": "turn"
+    },
+    {
+      "assertions": {
+        "contains": [
+          "To talk, try ASK person ABOUT topic or TELL person ABOUT topic."
+        ]
+      },
+      "command": "talk to chandelier",
+      "id": "7qdvllwy",
+      "type": "turn"
+    }
+  ],
+  "id": "tem2tpwm",
+  "ordinal": 1,
+  "parent": "ian8unz4"
+}

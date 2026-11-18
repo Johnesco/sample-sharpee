@@ -1,0 +1,37 @@
+{
+  "cards": [
+    {
+      "assertions": {
+        "contains": [
+          "already open"
+        ]
+      },
+      "command": "open journal",
+      "id": "8u4i590v",
+      "type": "turn"
+    },
+    {
+      "assertions": {
+        "contains": [
+          "The treasure is hidden where water meets stone."
+        ]
+      },
+      "command": "read journal",
+      "id": "qd8ma5q0",
+      "type": "turn"
+    },
+    {
+      "assertions": {
+        "contains": [
+          "You have scored 2 out of 10"
+        ]
+      },
+      "command": "score",
+      "id": "yv5d2d3z",
+      "type": "turn"
+    }
+  ],
+  "id": "p2f0w82x",
+  "ordinal": 1,
+  "parent": "bnlrj8s7"
+}

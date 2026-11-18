@@ -1,0 +1,143 @@
+{
+  "cards": [
+    {
+      "assertions": {
+        "contains": [
+          "Entrance Hall"
+        ]
+      },
+      "command": "s",
+      "id": "xnfu9qyn",
+      "type": "turn"
+    },
+    {
+      "assertions": {
+        "contains": [
+          "Garden",
+          "You can see a rusty coin here."
+        ]
+      },
+      "command": "s",
+      "id": "e0oifinw",
+      "type": "turn"
+    },
+    {
+      "assertions": {
+        "contains": [
+          "You brush off the grime. Despite its age, the coin has a satisfying weight."
+        ],
+        "states": [
+          "the rusty coin is polished"
+        ]
+      },
+      "command": "take rusty coin",
+      "id": "c8w5qeh1",
+      "type": "turn"
+    },
+    {
+      "assertions": {
+        "contains": [
+          "Pond",
+          "reeds and flat stones"
+        ]
+      },
+      "command": "s",
+      "id": "kcmi5ymw",
+      "type": "turn"
+    },
+    {
+      "assertions": {
+        "contains": [
+          "You push aside one of the loose stones and discover a golden ring hidden beneath it!"
+        ],
+        "states": [
+          "the golden ring is found",
+          "the flat stones is shifted"
+        ]
+      },
+      "command": "push flat stones",
+      "id": "3oxaoe1x",
+      "type": "turn"
+    },
+    {
+      "assertions": {
+        "contains": [
+          "Taken."
+        ],
+        "states": [
+          "player.inventory contains golden ring"
+        ]
+      },
+      "command": "take golden ring",
+      "id": "ejutaho7",
+      "type": "turn"
+    },
+    {
+      "assertions": {
+        "contains": [
+          "Garden"
+        ]
+      },
+      "command": "n",
+      "id": "gz69rp6n",
+      "type": "turn"
+    },
+    {
+      "assertions": {
+        "contains": [
+          "Entrance Hall"
+        ]
+      },
+      "command": "n",
+      "id": "u78a9ixh",
+      "type": "turn"
+    },
+    {
+      "assertions": {
+        "contains": [
+          "Library"
+        ]
+      },
+      "command": "n",
+      "id": "u0kdxy4e",
+      "type": "turn"
+    },
+    {
+      "assertions": {
+        "contains": [
+          "Study"
+        ],
+        "states": [
+          "player.location = Study"
+        ]
+      },
+      "command": "up",
+      "id": "y1w4rsbi",
+      "type": "turn"
+    },
+    {
+      "assertions": {
+        "contains": [
+          "You unlock the wooden cabinet with the brass key."
+        ]
+      },
+      "command": "unlock cabinet with brass key",
+      "id": "sn0o2cd9",
+      "type": "turn"
+    },
+    {
+      "assertions": {
+        "contains": [
+          "You open the wooden cabinet.",
+          "In the wooden cabinet you see a silver locket."
+        ]
+      },
+      "command": "open cabinet",
+      "id": "66k9e0vm",
+      "type": "turn"
+    }
+  ],
+  "id": "bhhcvwsg",
+  "ordinal": 0,
+  "parent": "bnlrj8s7"
+}
