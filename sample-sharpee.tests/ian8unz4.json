@@ -11,21 +11,15 @@
             "id": "info.description",
             "is": "A practice game for learning Chord: rooms, objects, and interactions."
           }
-        ]
-      },
-      "id": "jvathdmo",
-      "type": "opening"
-    },
-    {
-      "assertions": {
+        ],
         "contains": [
           "Entrance Hall",
           "A crystal chandelier hangs overhead.",
           "You can see a brass key here."
         ]
       },
-      "id": "36vhq83d",
-      "type": "boot"
+      "id": "jvathdmo",
+      "type": "opening"
     }
   ],
   "id": "ian8unz4"

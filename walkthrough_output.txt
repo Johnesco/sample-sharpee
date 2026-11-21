@@ -291,74 +291,76 @@ Congratulations! You have found all the secrets of this place. You win!
 
 You have risen to the rank of a Winner.
 
+[The story has ended. RESTART, RESTORE or UNDO]
+
 > drop silver locket
-Error: Engine is not running
+[The story has ended. RESTART, RESTORE or UNDO]
 
 > down
-Error: Engine is not running
+[The story has ended. RESTART, RESTORE or UNDO]
 
 > south
-Error: Engine is not running
+[The story has ended. RESTART, RESTORE or UNDO]
 
 > east
-Error: Engine is not running
+[The story has ended. RESTART, RESTORE or UNDO]
 
 > take stone hearth
-Error: Engine is not running
+[The story has ended. RESTART, RESTORE or UNDO]
 
 > take wooden table
-Error: Engine is not running
+[The story has ended. RESTART, RESTORE or UNDO]
 
 > eat loaf of bread
-Error: Engine is not running
+[The story has ended. RESTART, RESTORE or UNDO]
 
 > take loaf of bread
-Error: Engine is not running
+[The story has ended. RESTART, RESTORE or UNDO]
 
 > drop loaf of bread
-Error: Engine is not running
+[The story has ended. RESTART, RESTORE or UNDO]
 
 > open ceramic mug
-Error: Engine is not running
+[The story has ended. RESTART, RESTORE or UNDO]
 
 > take ceramic mug
-Error: Engine is not running
+[The story has ended. RESTART, RESTORE or UNDO]
 
 > drop ceramic mug
-Error: Engine is not running
+[The story has ended. RESTART, RESTORE or UNDO]
 
 > west
-Error: Engine is not running
+[The story has ended. RESTART, RESTORE or UNDO]
 
 > south
-Error: Engine is not running
+[The story has ended. RESTART, RESTORE or UNDO]
 
 > take stone fountain
-Error: Engine is not running
+[The story has ended. RESTART, RESTORE or UNDO]
 
 > take ivy
-Error: Engine is not running
+[The story has ended. RESTART, RESTORE or UNDO]
 
 > take rusty coin
-Error: Engine is not running
+[The story has ended. RESTART, RESTORE or UNDO]
 
 > drop rusty coin
-Error: Engine is not running
+[The story has ended. RESTART, RESTORE or UNDO]
 
 > south
-Error: Engine is not running
+[The story has ended. RESTART, RESTORE or UNDO]
 
 > take reeds
-Error: Engine is not running
+[The story has ended. RESTART, RESTORE or UNDO]
 
 > push flat stones
-Error: Engine is not running
+[The story has ended. RESTART, RESTORE or UNDO]
 
 > take flat stones
-Error: Engine is not running
+[The story has ended. RESTART, RESTORE or UNDO]
 
 > score
-Error: Engine is not running
+You have achieved a perfect score of 10 points!
 
 > take silver locket
-Error: Engine is not running
+[The story has ended. RESTART, RESTORE or UNDO]
